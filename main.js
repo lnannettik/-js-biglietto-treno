@@ -5,9 +5,9 @@ const nomeUtente = prompt('Inserisci il tuo nome');
 // CHIEDIAMO DI INSERIRE L'ETA' (O L'ANNO DI NASCITA)
 const etaUtente = parseInt( prompt('Inserisci la tua età'));
 
-// if (etaUtente = NaN) {
-//     alert (`CAPRA!! DEVI SCRIVERE DEI NUMERI`)
-// }
+if (etaUtente = NaN) {
+    alert('CAPRA!! DEVI SCRIVERE DEI NUMERI');
+}
 
 // CHIEDIAMO DI INSERIRE I KM
 const kilometri = parseInt( prompt('Inserire la distanza da percorrere in km'));
