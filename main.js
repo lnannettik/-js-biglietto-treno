@@ -18,20 +18,32 @@ let prezzoPieno = `${kilometri}` * (21 / 100);
 console.log(`il prezzo pieno è: ${prezzoPieno}`);
 
 
+// // DEFINIAMO IL PREZZO UNDER 18
+// let scontoUnder18 = `${prezzoPieno}` * (80 / 100);
+// console.log(`il tuo prezzo è pari a: ${scontoUnder18}`);
+
+// // DEFINIAMO IL PREZZO OVER 65
+// let scontoOver65 = `${prezzoPieno}` * (60 / 100);
+// console.log(`il tuo prezzo è pari a: ${scontoOver65}`);
+
+
+
 // DEFINIAMO LO SCONTO UNDER 18
-let scontoUnder18 = `${prezzoPieno}` * (100 / 20);
+let scontoUnder18 = `${prezzoPieno}` * (20 / 100);
 console.log(`il tuo sconto è pari a: ${scontoUnder18}`);
 
 // DEFINIAMO LO SCONTO OVER 65
-let scontoOver65 = `${prezzoPieno}` * (100 / 40);
+let scontoOver65 = `${prezzoPieno}` * (40 / 100);
 console.log(`il tuo sconto è pari a: ${scontoOver65}`);
 
 
 // DEFINIAMO IL PREZZO SCONTATO UNDER 18
 let prezzoFinaleUnder18 = `${prezzoPieno}` - `${scontoUnder18}`;
+console.log(`il tuo prezzo finale  come under 18 è ${prezzoFinaleUnder18}`)
 
 // DEFINIAMO IL PREZZO SCONTATO OVER 65
-let prezzoFinaleSconto65 = `${prezzoPieno}` - `${scontoOver65}`;
+let prezzoFinaleOver65 = `${prezzoPieno}` - `${scontoOver65}`;
+console.log(`il tuo prezzo finale  come over 65 è ${prezzoFinaleOver65}`)
 
 
 if (etaUtente < 18) {
@@ -43,29 +55,4 @@ else if (etaUtente > 65) {
 else {
     document.getElementById('prezzoPieno').innerHTML = `€ ${prezzoPieno}`;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// // ESPRESSIONE CHE DA' IL RISULTATO
-// const prezzo = `${kilometri } * ${sconto }`;
-
-
-
-
-// // ESPRESSIONE CHE DA' IL RISULTATO
-// const passUtente = nomeUtente + cognomeUtente + coloreUtente;
-
-
-// // ESPRESSIONE CHE DA' IL RISULTATO random
-// const prezzo = nomeUtente + valRandomA + cognomeUtente + valRandomB + coloreUtente + valRandomC;
-
 
