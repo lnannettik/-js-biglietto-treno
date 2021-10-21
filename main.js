@@ -5,9 +5,9 @@ const nomeUtente = prompt('Inserisci il tuo nome');
 // CHIEDIAMO DI INSERIRE L'ETA' (O L'ANNO DI NASCITA)
 const etaUtente = parseInt( prompt('Inserisci la tua età'));
 
-// if (isNaN(etaUtente)) {
-//     alert('CAPRA!! DEVI SCRIVERE DEI NUMERI');
-// }
+if (isNaN(etaUtente)) {
+    alert('CAPRA!! DEVI SCRIVERE DEI NUMERI');
+}
 
 // CHIEDIAMO DI INSERIRE I KM
 const kilometri = parseInt( prompt('Inserire la distanza da percorrere in km'));
@@ -49,9 +49,9 @@ console.log(`il tuo prezzo finale  come under 18 è ${prezzoFinaleUnder18}`)
 let prezzoFinaleOver65 = `${prezzoPieno}` - `${scontoOver65}`;
 console.log(`il tuo prezzo finale  come over 65 è ${prezzoFinaleOver65}`)
 
-if (isNaN(etaUtente) ) {
-    alert('DEVI SCRIVERE DEI NUMERI');
-}
+// if (isNaN(etaUtente) ) {
+//     alert('DEVI SCRIVERE DEI NUMERI');
+// }
 if (etaUtente < 18) {
     document.getElementById('prezzoFinaleUnder18').innerHTML = `Esci € ${prezzoFinaleUnder18}`;
 }
